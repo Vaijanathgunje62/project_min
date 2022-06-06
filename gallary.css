@@ -1,0 +1,122 @@
+*{
+    margin-bottom:0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background:linear-gradient(black,skyblue,black);
+    height: 100%;
+  
+
+}
+.navbar ul li{
+    display:inline-block;
+    margin:25px;
+    margin-top:-10px;
+    margin-bottom:10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size:18px;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    text-decoration: none;
+    color:darkmagenta;
+    text-transform: uppercase;
+    font-size:21px;
+    transition-duration: 1s;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width:0%;
+    background:blueviolet;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.fill{
+    border: 1px solid black;
+    margin-top:10px;
+    height:70px;
+    background-color:none;
+    left: 0;
+    position: relative;
+    margin-bottom: 30px;
+   
+}
+h1{
+    width:100%;
+    text-align:center;
+    font-size: 30px;
+    margin-top:20px;
+    padding-bottom:5px;
+    color: orangered;
+}
+h1:hover{
+    transform: translate(10%);
+    color:orange;
+    transition-duration:2s;
+    text-align: center;
+    transition-timing-function: linear;
+}
+h1::after{
+    content:'';
+    height: 3px;
+    width:0%;
+    background:rgb(40, 24, 136);
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+h1:hover::after{
+    width:100%;
+    background:orange;
+    transition: 3s;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+}
+.main{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,350px));
+    column-gap: 20px;
+    
+}
+img{
+    border: 2px solid black;
+    border-radius:0px;
+    width:330px;
+    height:270px;
+    object-fit: cover;
+    object-position: center;
+    margin:10px;
+    margin-left: 10px;
+    }
+img:hover{
+    border: 3px solid black;
+    border-radius: 20px;
+    width:350px;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+    margin:10px;
+    margin-left: 10px;
+    transition-duration: 1s;
+    /* transform: translateY(-10px); */
+    }

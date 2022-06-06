@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form>span{
+            color: red;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="Success.html" onsubmit="return validateForm()"   novalidate>
+    <label>Enter First Name:</label> 
+    <input id="fname" name="myname"  onblur="validate1()" required><br>
+    <span id="error1"></span><br><br>
+    <label>Enter Middle Name:</label> 
+    <input type="text" id="mname" name="myname" onblur="validate2()"><br>
+    <span id="error2"></span><br><br>
+    <label>Enter Last Name:</label> 
+    <input type="text" id="lname" name="myname" value="Palkar" onblur="validate3()" required><br>
+    <span id="error3"></span><br><br>
+    <label>Enter Email Id:</label>
+    <input type="email" id="emailid" name="emailid" placeholder="enter email id" onblur="validate4()"   required><br>
+    <span id="error4"></span><br><br>
+    <label>Enter your age:</label>
+    <input type="number"  id="age" min="0" max="110" onblur="validate5()" required><br>
+    <span id="error5"></span><br><br>
+    <label>Enter Mobile Number:</label>
+    <input type="tel"  id="mobile" pattern="[0-9]{10}" onblur="validate6()" required><br>
+    <span id="error6"></span><br><br>
+    <label>Set User Name:</label> 
+    <input type="text" id="uname" minlength="6" maxlength="12"  onblur="validate7()" required><br>
+    <span id="error7"></span><br><br>
+    <label>Set Password:</label> 
+    <input type="text" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" onblur="validate8()"  required><br>
+    <span id="error8"></span><br><br>
+    <label>Confirm Password:</label> 
+    <input type="text" id="c_pass" onblur="validate9()" required><br>
+    <span id="error9"></span><br><br>
+    <input type="submit" value="REGISTER">
+    <input type="reset" >
+    </form>
+    <script src="/home/neosoft/MiniProject/formvalidate.js"></script>
+</body>
+</html>
+
+    © 2022 GitHub, Inc.
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+

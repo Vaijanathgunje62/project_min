@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $("div").css("color", "red")
+        .slideUp(0)
+        .slideDown(1000);
+    });
+    // });
+    </script> 
+</head>
+<body>
+    <form  class="login-form" action="success.html" onsubmit="return validateForm()"   novalidate>
+        <div class="title">
+            <h2>REGISTRATION</h2>
+            
+        </div>
+        <div class="input-group">
+            <label id="lable1" for="username">Name:</label>
+            <input type="text" id="username" minlength="6" maxlength="12" required onblur="validate1()"placeholder="Name">
+            <span id="error1"></span><br><br>
+        </div>
+
+        <div class="input-group">
+            <label id="lable1" for="username">Email:</label>
+            <input type="email" id="emailid" name="emailid" placeholder="Enter Email Id" onblur="validate4()"   required><br>
+            <span id="error4"></span><br><br>
+        </div>
+
+        <div class="input-group">
+            <label id="lable1" for="username">Mobile no:</label>
+            <input type="tel"  id="mobile" pattern="[0-9]{10}" placeholder="Mobile NO" onblur="validate5()" required><br>
+             <span id="error5"></span><br><br>
+        </div>
+
+        <div class="input-group">
+            <label id="lable1" for="password">Password:</label>
+            <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" onblur="validate2()"  required  placeholder="Password">
+            <span id="error2"></span><br><br>
+        </div>
+        <div class="input-group">
+            <label id="lable1" for="password">Confirm Password:</label>
+            <input type="password" id="c_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" onblur="validate3()"  required  placeholder="Confirm Password">
+            <span id="error3"></span><br><br>
+        </div>
+        
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+<script src="FormRegi.js"> </script>
+</body>
+</html>

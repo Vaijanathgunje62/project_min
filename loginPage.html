@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script> 
+        $(document).ready(function(){
+            $("div").css("color", "red")
+            .slideUp(0)
+            .slideDown(1000);
+        });
+        // });
+        </script> 
+</head>
+<body>
+    <form  class="login-form" onsubmit="return validateForm()"   novalidate>
+        <div class="title">
+            <h2 id="login">LOGIN</h2>
+        </div>
+        <div class="input-group">
+            <label id="lable1" for="username">Name:</label>
+            <input type="text" id="username" minlength="6" maxlength="12" required onblur="validate1()"placeholder="name">
+            <span id="error1"></span><br><br>
+        </div>
+        <div class="input-group">
+            <label id="lable1" for="password">Password:</label>
+            <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" onblur="validate2()"  required placeholder="password">
+            <span id="error2"></span><br><br>
+        </div>
+    
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+<script src="login.js"> </script>
+</body>
+</html>

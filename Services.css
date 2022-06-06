@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    background: url(Images/pexels-pixabay-276551.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    opacity:1;
+
+}
+.navbar{
+    width:100%;
+    margin:auto;
+    height:70px;
+    padding:5px;
+    display:flex;
+    align-items:center;
+}
+.navbar ul li{
+    display:inline-block;
+    margin:20px;
+    position: relative;
+    margin-right: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    text-decoration: none;
+    color:darkmagenta;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width:0%;
+    background:blueviolet;
+    position:absolute;
+    left:0;
+    bottom:0;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+    color: snow;
+    border: solid 2px none;
+    padding-left:  50px;
+    width:90%;
+
+}
+.heading:hover{
+    font-size: 35px;
+    color:darkorchid;
+    width:100%;
+    transition:1s;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 15px;
+    padding: 20px;
+    height: auto;
+}
+
+.box{
+    padding: 10px;
+    border-radius: 20px;
+    background: none;
+    border: 3px solid skyblue;
+    text-align: center;
+    height: auto;
+}
+    
+#title{
+    color:black;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    
+}
+
+#title:hover{
+    color: blueviolet;
+    transition-duration: 1s;
+    background: linear-gradient(skyblue,white);
+
+
+}
+p{
+    font-size: 18px;
+    color:black;
+    padding: 10px;
+       
+}
+p:hover{
+    transition-duration: 1s;
+    background: linear-gradient(skyblue 30%,white 60%,skyblue);
+
+}
+a{
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding:10px 0;
+    font-size: 19px;
+    cursor:pointer;
+}
+a:hover{
+    color:white;
+    transition-duration: 1s;
+   font-size: 24px;
+
+}
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ;
+
+
