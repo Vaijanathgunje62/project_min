@@ -44,12 +44,12 @@ function validate2(){
     let regExp= new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,15})");
     errorNode2.innerHTML="";  
     if(password1===''){
-        errorNode2.innerHTML="Incorect Password";
+        errorNode2.innerHTML="Password is required";
         passNode.style.border=errorBorder;
         return false;
     }
     else if(regExp.test(password1)==false){
-        errorNode2.innerHTML=" ";
+        errorNode2.innerHTML=" Incorect Password";
         passNode.style.border=errorBorder;
         return false;
     }
