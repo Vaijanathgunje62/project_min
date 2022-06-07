@@ -30,7 +30,7 @@ function validate1(){
         return false;
     }
     else if(username1.length<6 || username1.length>12){
-        errorNode1.innerHTML="Username is required";
+        errorNode1.innerHTML="Username not found";
         unameNode.style.border=errorBorder;
         return false;
     }
@@ -44,12 +44,12 @@ function validate2(){
     let regExp= new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,15})");
     errorNode2.innerHTML="";  
     if(password1===''){
-        errorNode2.innerHTML="Password is required";
+        errorNode2.innerHTML="Incorect Password";
         passNode.style.border=errorBorder;
         return false;
     }
     else if(regExp.test(password1)==false){
-        errorNode2.innerHTML="Password is required";
+        errorNode2.innerHTML=" ";
         passNode.style.border=errorBorder;
         return false;
     }
