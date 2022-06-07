@@ -49,7 +49,7 @@ function validate2(){
         return false;
     }
     else if(regExp.test(password1)==false){
-        errorNode2.innerHTML=" Incorect Password";
+        errorNode2.innerHTML=" Please Enter Correct Password";
         passNode.style.border=errorBorder;
         return false;
     }
