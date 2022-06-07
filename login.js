@@ -30,7 +30,7 @@ function validate1(){
         return false;
     }
     else if(username1.length<6 || username1.length>12){
-        errorNode1.innerHTML="Username should be min 6 and max 12 characters long";
+        errorNode1.innerHTML="Username is required";
         unameNode.style.border=errorBorder;
         return false;
     }
@@ -49,7 +49,7 @@ function validate2(){
         return false;
     }
     else if(regExp.test(password1)==false){
-        errorNode2.innerHTML="Password should contain atleast one digit, small letter and capital letter.Password should be min 6 and max 15 characters long";
+        errorNode2.innerHTML="Password is required";
         passNode.style.border=errorBorder;
         return false;
     }
